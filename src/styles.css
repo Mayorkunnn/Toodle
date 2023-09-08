@@ -257,7 +257,7 @@ body {
 }
 
 .selector.active {
-  color: var(--color-text);
+  color: rosybrown;
 }
 
 .clear {
@@ -335,7 +335,7 @@ body.lightmode .custom-checkbox {
 body.lightmode .clear:hover,
 body.lightmode .selector:hover,
 body.lightmode .selector.active {
-  color: rgb(94, 73, 26);
+  color: rgb(214, 170, 73);
 }
 
 body.lightmode .list:hover {
