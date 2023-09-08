@@ -1,0 +1,91 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="../images/clock.svg"
+      sizes="32x32"
+      type="image/svg+xml"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toodle</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <main class="todo">
+      <div class="heading main--head">
+        <h2>Toodle</h2>
+        <img class="mode" src="../images/sun.svg" alt="Mode" />
+      </div>
+      <div class="inputs">
+        <input id="input__text" type="text" placeholder="Add a task" />
+        <div class="add">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- TODO List -->
+      <section class="main">
+        <aside class="tasks">
+          <div class="heading">
+            <h2 class="head">All</h2>
+            <p class="items__left">5 items left</p>
+          </div>
+          <ul class="lists"></ul>
+
+          <!-- <div class="hidden">
+            <div class="heading">
+              <h2>Completed✔️</h2>
+            </div>
+            <ul class="lists">
+              <li class="list completed">
+                <label>
+                  <input class="input__check" type="checkbox" disabled />
+                  <span class="custom-checkbox"></span>
+                </label>
+                <p>I am a boy that wants to code a lot</p>
+              </li>
+            </ul>
+          </div>
+          <div class="hidden">
+            <div class="heading">
+              <h2>Active⭐</h2>
+            </div>
+            <ul class="lists">
+              <li class="list active">
+                <label>
+                  <input class="input__check" type="checkbox" />
+                  <span class="custom-checkbox"></span>
+                </label>
+                <p>I am a boy that wants to code a lot</p>
+              </li>
+            </ul>
+          </div> -->
+          <div class="all__selectors">
+            <button class="clear">Clear Completed</button>
+
+            <div class="selectors">
+              <button class="selector active">All</button>
+              <button class="selector">Active</button>
+              <button class="selector">Completed</button>''
+            </div>
+          </div>
+        </aside>
+        <!-- <aside class="Important">
+        <h2>Important</h2>
+        <ul class="lists"></ul>
+      </aside> -->
+      </section>
+    </main>
+
+    <!-- <label>
+          <input class="input__check" type="checkbox"  />
+          <span class="custom-checkbox"></span>
+        </label> -->
+  </body>
+</html>
