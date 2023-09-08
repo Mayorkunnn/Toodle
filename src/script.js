@@ -1,3 +1,12 @@
+import './styles.css';
+const favicon = document.querySelector('link[rel="icon"]');
+
+// Set the href attribute to the path of your SVG icon
+
+import logoImage from '../images/clock.svg';
+import sunImage from '../images/sun.svg';
+import moonImage from '../images/moon.svg';
+
 const selector = document.querySelectorAll('.selector');
 const taskInput = document.querySelector('#input__text');
 const add = document.querySelector('.add');
@@ -9,6 +18,8 @@ const itemsLeft = document.querySelector('.items__left');
 const mode = document.querySelector('.mode');
 const body = document.querySelector('body');
 
+favicon.href = logoImage;
+mode.src = sunImage;
 class Task {
   id = (Date.now() + '').slice(-10);
   constructor(todo) {
@@ -40,9 +51,9 @@ class App {
   }
 
   changeMode() {
-    mode.getAttribute('src') === '../images/sun.svg'
-      ? (mode.src = '../images/moon.svg')
-      : (mode.src = '../images/sun.svg');
+    mode.getAttribute('src') === sunImage
+      ? (mode.src = moonImage)
+      : (mode.src = sunImage);
     body.classList.toggle('lightmode');
   }
 
