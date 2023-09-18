@@ -218,11 +218,12 @@ body {
 
 .list.completed .custom-checkbox:hover {
   border-color: #6a6a6a;
-  background-color: #6a6a6a;
+  background-color: #a8a8a8;
 }
 
 .list.completed .custom-checkbox {
   border-color: #bebdbd;
+  background-color: #8e8c8c;
 }
 
 .hidden {
